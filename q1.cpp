@@ -21,7 +21,6 @@ int insertAtBeginning(int val) {
         Node* newNode = new Node(val);
         newNode->next = head;
         head = newNode;
-        cout << val << " added at start\n";
         return 0;
     }
 int insertAtEnd(int val) {
@@ -34,7 +33,6 @@ int insertAtEnd(int val) {
                 temp = temp->next;
             temp->next = newNode;
         }
-        cout << val << " added at end\n";
         return 0;
     }
 
@@ -49,7 +47,6 @@ int insertAtEnd(int val) {
         if(position == "before" && head->data == target){
             newNode->next = head;
             head = newNode;
-            cout << val << " inserted before " << target << endl;
             return 0;
         }
 
